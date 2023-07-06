@@ -7,6 +7,7 @@ import Button from "./Button";
 import { styled } from "styled-components";
 import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
+import Footer from "./Footer";
 
 const CartellinoContext = createContext(undefined);
 const BlockStyled = styled.div`
@@ -28,6 +29,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <Footer />
       <CartellinoContext.Provider
         value={{
           title,
